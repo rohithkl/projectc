@@ -15,10 +15,28 @@ pipeline {
       }
       
        stage('deploy') {
-        steps {
-         echo "this is a Build stage" 
-        }
-      }
+         parallel{
+           
+           stage('server1') {
+              steps {
+               echo "this is a server1" 
+                  }
+                 }
+           
+           stage('server2') {
+              steps {
+               echo "this is a server2" 
+                  }
+                 }
+           
+           stage('server3') {
+              steps {
+               echo "this is a server3" 
+                  }
+                 }
+           
+                }
+               }
       
     }
 }
