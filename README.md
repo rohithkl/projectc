@@ -1,2 +1,2 @@
 # projectc
-this is a simple project to generate a build of c source codes using make
+this is a simple assignment to generate a build of c source codes using make
